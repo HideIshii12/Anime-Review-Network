@@ -1,10 +1,41 @@
-header{
+*{
+  margin: 0;
+  padding: 0;
 }
 
-body {
+html, body{
+  height: 100%;
+}
+
+#container{
+  min-height: 100%;
+}
+
+#navbar{
+  background-color: purple;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  clear: both;
+  position: fixed;
+}
+
+#copyright{
+  float: right;
+  padding-top: 50px;
+}
+
+#main{
+  overflow: auto;
+  clear: both;
+  padding-bottom: 100px;
+}
+
+#footer{
   background-color: darkgrey;
-}
-
-footer {
-  display: block;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: -100px;
+  clear: both;
 }
