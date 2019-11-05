@@ -7,11 +7,7 @@ html, body{
   height: 100%;
 }
 
-#container{
-  min-height: 100%;
-}
-
-#navbar{
+#nav-bar{
   background-color: rgb(38, 38, 38);
   position: fixed;
   width: 100%;
@@ -20,8 +16,9 @@ html, body{
 }
 
 #buttons-group{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(38, 38, 38);
   position: relative;
+  top: 20px;
   right: 50px;
   float: right;
 }
@@ -36,6 +33,56 @@ html, body{
   margin: 10px 10px 30px 10px;
   padding: 10px;
   float: right;
+}
+
+.dropdown-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1);
+  animation: balloon .8s;
+  animation: jump .8s infinite;
+  box-shadow: 0px 5px 15px white;
+  cursor: pointer;
+}
+
+.dropdown-button:nth-child(1):hover {
+  box-shadow: 0px 5px 15px rgb(255, 118, 118);
+}
+
+.dropdown-button:nth-child(2):hover {
+  box-shadow: 0px 5px 15px rgb(228, 255, 118);
+}
+
+.dropdown-button:nth-child(3):hover {
+  box-shadow: 0px 5px 15px rgb(140, 255, 118);
+}
+
+@-webkit-keyframes balloon {
+  0% {
+    font-size: 14px;
+  }
+
+  50% {
+    font-size: 16px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #copyright{
