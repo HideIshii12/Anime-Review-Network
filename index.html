@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Anime Reviews Network</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="image.png">
     <meta name="description" content="Anime News Network, a platform created to address the needs of " />
@@ -64,6 +64,19 @@
       right: 30px;
       float: right;
     }
+
+    #search-bar{
+      background-color: rgba(255, 255, 255, 1);
+      position: inherit;
+      top: 30px;
+      right: 420px;
+      border-radius: 20px;
+      border: none;
+      height: 40px;
+      width: 280px;
+      padding-left: 20px;
+    }
+
     .nav-button{
       background-color: rgba(0, 0, 0, 0);
       color: rgba(255, 255, 255, 1);
@@ -118,6 +131,7 @@
         transform: translateY(0px);
       }
     }
+
     #copyright{
       position: absolute;
       top: 30px;
@@ -127,7 +141,7 @@
     }
     #main{
       position: absolute;
-      background-color: inherit;
+      background-color: rgba(0, 0, 0, 0);
     }
 
     #footer{
@@ -152,6 +166,7 @@
           <button class='nav-button' href='#news'>News</button>
           <button class='nav-button' href='#blogs'>Blogs</button>
           <button class='nav-button' href='#home'>Home</button>
+          <input id="search-bar" type="text" placeholder="Search..">
       </div>
     </div>
       <div id="main">
