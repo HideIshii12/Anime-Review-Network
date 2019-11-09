@@ -35,7 +35,7 @@ html, body{
   height: 70px;
   position: inherit;
   top: 10px;
-  left: 30px;
+  left: 260px;
 }
 
 #title{
@@ -43,15 +43,28 @@ html, body{
   font-size: 25px;
   position: absolute;
   top: 35px;
-  left: 100px;
+  left: 340px;
 }
 #buttons-group-two{
   background-color: rgba(38, 38, 38, 0);
   position: inherit;
   top: 20px;
-  right: 30px;
+  right: 250px;
   float: right;
 }
+
+#search-bar{
+  background-color: rgba(255, 255, 255, 1);
+  position: inherit;
+  top: 30px;
+  right: 630px;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 280px;
+  padding-left: 20px;
+}
+
 .nav-button{
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 1);
@@ -106,6 +119,7 @@ html, body{
     transform: translateY(0px);
   }
 }
+
 #copyright{
   position: absolute;
   top: 30px;
@@ -113,9 +127,32 @@ html, body{
   font-size: 13px;
   color: rgba(255, 255, 255, 1);
 }
+
+#left-margin{
+  background-color: rgba(255, 0, 0, 0);
+  width: 250px;
+  height: 905px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#right-margin{
+  background-color: rgba(255, 0, 0, 0);
+  width: 250px;
+  height: 905px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 #main{
   position: absolute;
-  background-color: inherit;
+  top: 102px;
+  right: 250px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 1420px;
+  height: 905px;
 }
 
 #footer{
