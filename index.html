@@ -74,15 +74,25 @@
     padding-left: 20px;
   }
   .nav-button{
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(255, 255, 255, 1);
-    padding: 16px;
-    font-size: 18px;
-    border: none;
     border-radius: 10px;
     margin: 10px 10px 30px 10px;
-    padding: 10px;
     float: right;
+    padding: 0px;
+  }
+  .nav-button-text{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    border-width: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    margin: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .nav-button-text:hover{
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
   }
   .nav-button:hover{
     background-color: rgba(255, 255, 255, 1);
@@ -176,10 +186,10 @@
       <a href='index.html'><span id="title">Anime Review Network</span></a>
     </div>
     <div id="buttons-group-two">
-      <a href='forums.html'><button class='nav-button'>Forums</button></a>
-      <a href='blogs.html'><button class='nav-button'>Blogs</button></a>
-      <a href='news.html'><button class='nav-button'>News</button></a>
-      <a href='anime.html'><button class='nav-button'>Anime</button></a>
+      <a href='forums.html' class='nav-button'><button class='nav-button-text'>Forums</button></a>
+      <a href='blogs.html' class='nav-button'><button class='nav-button-text'>Blogs</button></a>
+      <a href='news.html' class='nav-button'><button class='nav-button-text'>News</button></a>
+      <a href='anime.html' class='nav-button'><button class='nav-button-text'>Anime</button></a>
         <input id="search-bar" type="text" placeholder="Search..">
     </div>
   </div>
