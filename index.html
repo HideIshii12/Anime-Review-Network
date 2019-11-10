@@ -1,184 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Anime Review Network</title>
-    <link rel="stylesheet" href="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    *{
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+<head>
+  <meta charset="utf-8">
+  <title>Anime Reviews Network</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="image.png">
+  <meta name="description" content="Anime News Network, a platform created to address the needs of " />
+  <meta name="google-site-verification" content="" />
+
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+  #web{
+    background-image: url(https://images.unsplash.com/photo-1533563906091-fdfdffc3e3c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    height: 100%;
+    width: 100%;
+  }
+  html, body{
+    height: 100%;
+  }
+  #nav-bar{
+    background-color: rgba(38, 38, 38, 0.7);
+    position: fixed;
+    width: 100%;
+    min-height: 101px;
+    margin: 0px;
+  }
+  #buttons-group{
+    position: relative;
+    width: 100%;
+    min-height: 101px;
+    background-color: rgba(38, 38, 38, 0);
+  }
+  #buttons-group-one{
+    background-color: rgba(38, 38, 38, 0);
+    position: inherit;
+  }
+  #logo{
+    border-radius: 100%;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 260px;
+  }
+  #title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    position: absolute;
+    top: 35px;
+    left: 340px;
+  }
+  #buttons-group-two{
+    background-color: rgba(38, 38, 38, 0);
+    position: inherit;
+    top: 20px;
+    right: 250px;
+    float: right;
+  }
+  #search-bar{
+    background-color: rgba(255, 255, 255, 1);
+    position: inherit;
+    top: 30px;
+    right: 630px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 280px;
+    padding-left: 20px;
+  }
+  .nav-button{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px 30px 10px;
+    padding: 10px;
+    float: right;
+  }
+  .nav-button:hover{
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    animation: balloon .8s;
+    animation: jump .8s infinite;
+    box-shadow: 0px 5px 15px white;
+    cursor: pointer;
+  }
+  .nav-button:nth-child(1):hover{
+    box-shadow: 0px 5px 15px rgb(255, 118, 118);
+  }
+  .nav-button:nth-child(2):hover{
+    box-shadow: 0px 5px 15px rgb(228, 255, 118);
+  }
+  .nav-button:nth-child(3):hover{
+    box-shadow: 0px 5px 15px rgb(140, 255, 118);
+  }
+  .nav-button:nth-child(4):hover{
+    box-shadow: 0px 5px 15px rgb(118, 118, 255);
+  }
+  @-webkit-keyframes balloon{
+    0%{
+      font-size: 14px;
     }
-    html, body{
-      background-image: url(skylineCityAnimeWallpaper.jpg);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-color: #464646;
-      height: 100%;
+    50%{
+      font-size: 16px;
     }
-    #nav-bar{
-      background-color: rgb(38, 38, 38, 0.5);
-      position: fixed;
-      width: 100%;
-      min-height: 101px;
-      margin: 0px;
-    }
-    #buttons-group{
-      position: relative;
-      width: 100%;
-      min-height: 101px;
-    }
-    #buttons-group-one{
-      background-color: rgb(38, 38, 38, 0.5);
-      position: inherit;
-    }
-    #title{
-      color: rgba(255, 255, 255);
-      font-size: 25px;
-      position: absolute;
-      top: 35px;
-      left: 30px;
-    }
-    #buttons-group-two{
-      background-color: rgb(38, 38, 38, 0);
-      position: inherit;
-      top: 20px;
-      right: 30px;
-      float: right;
-    }
-    .nav-button{
-      background-color: rgba(0, 0, 0, 0);
-      color: rgba(255, 255, 255, 1);
-      padding: 16px;
+    100%{
       font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      margin: 10px 10px 30px 10px;
-      padding: 10px;
-      float: right;
     }
-    .nav-button:hover{
-      background-color: rgba(255, 255, 255, 1);
-      font-size: 18px;
-      color: rgba(0, 0, 0, 1);
-      animation: balloon .8s;
-      animation: jump .8s infinite;
-      box-shadow: 0px 5px 15px white;
-      cursor: pointer;
+  }
+  @-webkit-keyframes jump{
+    0%{
+      transform: translateY(0px);
     }
-    .nav-button:nth-child(1):hover{
-      box-shadow: 0px 5px 15px rgb(255, 118, 118);
+    50%{
+      transform: translateY(-5px);
     }
-    .nav-button:nth-child(2):hover{
-      box-shadow: 0px 5px 15px rgb(228, 255, 118);
+    100%{
+      transform: translateY(0px);
     }
-    .nav-button:nth-child(3):hover{
-      box-shadow: 0px 5px 15px rgb(140, 255, 118);
-    }
-    .nav-button:nth-child(4):hover{
-      box-shadow: 0px 5px 15px rgb(118, 118, 255);
-    }
-    @-webkit-keyframes balloon{
-      0%{
-        font-size: 14px;
-      }
-      50%{
-        font-size: 16px;
-      }
-      100%{
-        font-size: 18px;
-      }
-    }
-    @-webkit-keyframes jump{
-      0%{
-        transform: translateY(0px);
-      }
-      50%{
-        transform: translateY(-5px);
-      }
-      100%{
-        transform: translateY(0px);
-      }
-    }
-<<<<<<< Updated upstream
-    #copyright{
-      position: absolute;
-      top: 30px;
-      right: 240px;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 1);
-    }
-=======
-
-    #left-margin{
-      background-color: rgba(255, 0, 0, 0);
-      width: 250px;
-      height: 905px;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-    }
-
-    #right-margin{
-      background-color: rgba(255, 0, 0, 0);
-      width: 250px;
-      height: 905px;
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-    }
-
->>>>>>> Stashed changes
-    #main{
-      overflow: auto;
-      clear: both;
-      height: 3000px;
-      padding-bottom: 100px;
-    }
-    #footer{
-      background-color: rgb(38, 38, 38);
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      margin: 0px;
-      margin-top: -100px;
-      clear: both;
-    }
-
-    #copyright{
-      position: absolute;
-      top: 30px;
-      right: 280px;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 1);
-    }
-    </style>
-  </head>
-  <body>
-    <div id="nav-bar">
-      <div id="buttons-group"
-      <div id="buttons-group-one">
-        <span id="title">Title w/ logo</span>
-      </div>
-      <div id="buttons-group-two">
-          <button class='nav-button' href='#contacts'>Contacts</button>
-          <button class='nav-button' href='#news'>News</button>
-          <button class='nav-button' href='#blogs'>Blogs</button>
-          <button class='nav-button' href='#home'>Home</button>
-      </div>
-      </div>
+  }
+  #copyright{
+    position: absolute;
+    top: 30px;
+    right: 240px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+  }
+  #left-margin{
+    background-color: rgba(255, 0, 0, 0);
+    width: 250px;
+    height: 905px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  #right-margin{
+    background-color: rgba(255, 0, 0, 0);
+    width: 250px;
+    height: 905px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  #main{
+    position: absolute;
+    top: 102px;
+    right: 250px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 1420px;
+    height: 905px;
+  }
+  #footer{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  </style>
+</head>
+<body>
+  <div id="web">
+  <div id="nav-bar">
+    <div id="buttons-group"
+    <div id="buttons-group-one">
+      <a href='index.html'><img id="logo" src='https://lh3.googleusercontent.com/dOSP9nGcl0_HICbnbh046YHYHJsi_KHH2BG4Q0QTO6e6EcNOaHU7MHLK5_WhccyDcTgW3Pxsy3BpRlopMAquwwyiPoHSka95Tdt0fKSA7oFU6_miE5Y2-81V2kTjvBRf790yKgRc=w2400'/></a>
+      <a href='index.html'><span id="title">Anime Review Network</span></a>
     </div>
-      <div id="main">
-        <p>Insert text here...p>
-      </div>
-    <footer id="footer">
-      <div id="copyright">
-        <p>Copyright © 2019 International, All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+    <div id="buttons-group-two">
+      <a href='forums.html'><button class='nav-button'>Forums</button></a>
+      <a href='blogs.html'><button class='nav-button'>Blogs</button></a>
+      <a href='news.html'><button class='nav-button'>News</button></a>
+      <a href='anime.html'><button class='nav-button'>Anime</button></a>
+        <input id="search-bar" type="text" placeholder="Search..">
+    </div>
+  </div>
+  <div id="left-margin">
+  </div>
+  <div id="right-margin">
+  </div>
+    <div id="main">
+      <p>Insert text here...</p>
+    </div>
+  <footer id="footer">
+    <div id="copyright">
+      <p>Copyright © 2019 International, All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+</body>
 </html>
